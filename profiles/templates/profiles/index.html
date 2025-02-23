@@ -1,0 +1,24 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'profiles/css/index.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Connect</title>
+</head>
+<body>
+    <img src="{% static 'profiles/images/vc.png' %}" alt="Description of image">
+    <p>Volunteer Connect is a platform that bridges the gap between event organizers, public service organizations, and volunteers. Whether you’re looking for volunteers for an event or want to contribute to meaningful causes, our platform makes the process seamless.</p>
+    <div class="button-container">
+        <a class="signin" href="{% url 'signin' %}"> 
+            <button class="signin">Sign In</button>
+        </a>
+        <a class="signup" href="{% url 'signup' %}"> 
+            <button class="signup">Sign Up</button>
+        </a>
+    </div>
+    
+</body>
+</html>
